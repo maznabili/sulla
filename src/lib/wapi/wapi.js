@@ -2,7 +2,6 @@ import {
   _getGroupParticipants,
   addParticipant,
   areAllMessagesLoaded,
-  asyncLoadAllEarlierMessages,
   blockContact,
   clearChat,
   createGroup,
@@ -77,8 +76,6 @@ import {
   startTyping,
   stopTyping,
   unblockContact,
-  openChat,
-  openChatAt,
 } from './functions';
 import {
   base64ToFile,
@@ -174,8 +171,6 @@ window.WAPI.stopTyping = stopTyping;
 window.WAPI.sendLocation = sendLocation;
 window.WAPI.blockContact = blockContact;
 window.WAPI.unblockContact = unblockContact;
-window.WAPI.openChat = openChat;
-window.WAPI.openChatAt = openChatAt;
 
 // Retrieving functions
 window.WAPI.getAllContacts = getAllContacts;
@@ -197,7 +192,6 @@ window.WAPI.getChatById = getChatById;
 window.WAPI.getUnreadMessagesInChat = getUnreadMessagesInChat;
 window.WAPI.loadEarlierMessages = loadChatEarlierMessages;
 window.WAPI.loadAllEarlierMessages = loadAllEarlierMessages;
-window.WAPI.asyncLoadAllEarlierMessages = asyncLoadAllEarlierMessages;
 window.WAPI.areAllMessagesLoaded = areAllMessagesLoaded;
 window.WAPI.loadEarlierMessagesTillDate = loadEarlierMessagesTillDate;
 window.WAPI.getAllGroupMetadata = getAllGroupMetadata;

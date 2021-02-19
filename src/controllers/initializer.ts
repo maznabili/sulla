@@ -1,16 +1,17 @@
 import { readFileSync } from 'fs';
 import latestVersion from 'latest-version';
 import { Page } from 'puppeteer';
-import { from, interval, timer } from 'rxjs';
-import { map, takeUntil, tap, delay, switchMap } from 'rxjs/operators';
+import { timer } from 'rxjs';
+import { switchMap, takeUntil } from 'rxjs/operators';
 import { Whatsapp } from '../api/whatsapp';
 import { CreateConfig, defaultOptions } from '../config/create-config';
 import { upToDate } from '../utils/semver';
 import { isAuthenticated, isInsideChat, retrieveQR } from './auth';
 import { initWhatsapp, injectApi } from './browser';
-import chalk = require('chalk');
-import boxen = require('boxen');
+
 import Spinnies = require('spinnies');
+import boxen = require('boxen');
+import chalk = require('chalk');
 const { version } = require('../../package.json');
 
 // Global
@@ -34,7 +35,7 @@ export async function create(
   }
 
   // Initialize whatsapp
-  spinnies.add(`${session}-auth`, { text: 'Creating whatsapp instace...' });
+  spinnies.add(`${session}-auth`, { text: 'Creating whatsapp instance...' });
 
   const mergedOptions = { ...defaultOptions, ...options };
   let waPage = await initWhatsapp(session, mergedOptions);
@@ -59,7 +60,7 @@ export async function create(
       }
 
       if (mergedOptions.logQR) {
-        console.log(`Scan QR for: ${session}                `);
+        console.log(`Scan QR for: ${session}`);
         console.log(asciiQR);
       }
     } else {
@@ -103,7 +104,7 @@ function grabQRUntilInside(
       }
       if (options.logQR) {
         console.clear();
-        console.log(`Scan QR for: ${session}                `);
+        console.log(`Scan QR for: ${session}`);
         console.log(asciiQR);
       }
     });

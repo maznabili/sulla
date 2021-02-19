@@ -11,7 +11,6 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/danielcardeenas/sulla)
 [![GitHub license](https://img.shields.io/github/license/danielcardeenas/sulla)](https://github.com/danielcardeenas/sulla/blob/master/LICENSE)
 [![codebeat badge](https://codebeat.co/badges/7e510d47-8689-49da-abd8-a9a29d106a2b)](https://codebeat.co/projects/github-com-danielcardeenas-sulla-master)
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fdanielcardeenas%2Fsulla.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fdanielcardeenas%2Fsulla?ref=badge_shield)
 
 > Sulla is a javascript library which provides a high-level API control to
 > Whatsapp so it can be configured to automatize resposes or any data that goes
@@ -23,23 +22,6 @@
 >
 > By default sulla will try to use Google Chrome driver if installed, if not, it
 > will use integrated Chromium instance
-
-#### Changelog:
-> ☑️ Add `refreshQR` option in `create()`
->
-> ☑️ Add `openChat()` function with UI Layer
->
-> ☑️ Self check for updates
->
-> ☑️ More parameters to `create()`
->
-> ☑️ Added d.ts types comments for friendlier development
->
-> ☑️ Fixed video send, fixed optional `create()` parameters
->
-> ☑️ Bundle size now just 300 kB
->
-> ☑️ Added `debug` option and `useChrome` to `create()`
 
 ## Installation
 
@@ -158,6 +140,7 @@ available can be found in [here](/src/api/layers) and
 [here](/src/lib/wapi/functions)
 
 ### Chatting
+
 ##### Here, `chatId` could be `<phoneNuber>@c.us` or `<phoneNumber>-<groupId>@c.us`
 
 ```javascript
@@ -485,7 +468,3 @@ interested please open a Pull Request.
 
 Pull requests are welcome. For major changes, please open an issue first to
 discuss what you would like to change.
-
-## License
-
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fdanielcardeenas%2Fsulla.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fdanielcardeenas%2Fsulla?ref=badge_large)
