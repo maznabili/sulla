@@ -16,17 +16,39 @@
 > Whatsapp so it can be configured to automatize resposes or any data that goes
 > trough Whatsapp effortlessly.
 >
-> It is built using [puppeteer](https://github.com/GoogleChrome/puppeteer) and
-> it begin based on
-> [this python wrapper](https://github.com/mukulhase/WebWhatsapp-Wrapper)
+> It is built using [puppeteer](https://github.com/GoogleChrome/puppeteer)
+
+
+## Sulla state
+
+As of version `2.3.5` it seems that sulla has reached a very rich and stable
+functionality and architecture. As much as I would love to, I cannot dedicate a
+lot of time to this project so please consider checking out forked versions of
+sulla where other developers can dedicate more time and support to it.
+
+Recommended actively supported sulla-based projects:
+> [**wppconnect**](https://github.com/wppconnect-team/wppconnect/)
+> 
+> [![last commit](https://img.shields.io/github/last-commit/wppconnect-team/wppconnect)](https://github.com/wppconnect-team/wppconnect/)
+[![Downloads](https://img.shields.io/npm/dm/@wppconnect-team/wppconnect.svg)](https://www.npmjs.com/package/@wppconnect-team/wppconnect)
+[![Average time to resolve an issue](https://isitmaintained.com/badge/resolution/wppconnect-team/wppconnect.svg)](https://isitmaintained.com/project/wppconnect-team/wppconnect 'Average time to resolve an issue')
+
+> [**open-wa/wa-automate**](https://github.com/open-wa/wa-automate-nodejs)
 >
-> By default sulla will try to use Google Chrome driver if installed, if not, it
-> will use integrated Chromium instance
+> [![last commit](https://img.shields.io/github/last-commit/open-wa/wa-automate-nodejs)](https://github.com/open-wa/wa-automate-nodejs)
+[![Downloads](https://img.shields.io/npm/dm/@open-wa/wa-automate.svg)](https://www.npmjs.com/package/@open-wa/wa-automate)
+[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/open-wa/wa-automate-nodejs.svg)](http://isitmaintained.com/project/open-wa/wa-automate-nodejs "Average time to resolve an issue")
+
+> [**orkestral/Venom**](https://github.com/orkestral/venom)
+> 
+> [![last commit](https://img.shields.io/github/last-commit/orkestral/venom)](https://github.com/orkestral/venom)
+[![Downloads](https://img.shields.io/npm/dm/venom-bot.svg)](https://www.npmjs.com/package/venom-bot)
+[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/orkestral/venom.svg)](http://isitmaintained.com/project/orkestral/venom 'Average time to resolve an issue')
 
 ## Installation
 
 ```bash
-> npm i sulla
+> npm i sulla --save
 ```
 
 ## Getting started
@@ -452,12 +474,6 @@ To build the entire project just run
 > npm run build
 ```
 
-## Sulla state
-
-As of version `2.3.5` it seems that sulla has reached a very rich and stable
-functionality and architecture. As much as I would love to, I cannot dedicate a
-lot of time to this project so please consider checking out forked versions of
-sulla where other developers can dedicate more time and support to it.
 
 ## Maintainers
 
